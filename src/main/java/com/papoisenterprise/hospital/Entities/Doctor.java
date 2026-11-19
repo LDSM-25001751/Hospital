@@ -11,6 +11,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+//Clase Doctor: desde esta clase instanciaremos nuestros Doctores del hospital
 public class Doctor extends Persona{
 
     private String especialidad;
