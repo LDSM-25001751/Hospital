@@ -14,6 +14,8 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+// Clase Genérica Persona: declaramos los atributos que vamos a requerir
+// A partir de ella heredaremos los atributos a las clases que deseemos crear
 public class Persona {
 
     @Id
