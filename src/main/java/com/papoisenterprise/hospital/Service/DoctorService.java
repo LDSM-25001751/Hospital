@@ -5,9 +5,11 @@ import com.papoisenterprise.hospital.Entities.Doctor;
 import com.papoisenterprise.hospital.Exceptions.RecursoDuplicadoException;
 import com.papoisenterprise.hospital.Exceptions.RecursoNoEncontradoException;
 import com.papoisenterprise.hospital.Repository.DoctorRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class DoctorService implements BaseService<Doctor, DoctorRequestDTO> {
     private final DoctorRepository repository;
 
