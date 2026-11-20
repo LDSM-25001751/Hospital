@@ -18,4 +18,3 @@ public class ManejadorExceptions {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
     }
 }
-
