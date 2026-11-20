@@ -17,7 +17,7 @@ public class DoctorService implements BaseService<Doctor, DoctorRequestDTO> {
         this.repository = repository;
     }
     @Override
-    public List<Doctor> listar() {
+    public List<Doctor> listar(){
         return repository.findAll(); }
 
     @Override
@@ -60,4 +60,3 @@ public class DoctorService implements BaseService<Doctor, DoctorRequestDTO> {
         return d;
     }
 }
-
