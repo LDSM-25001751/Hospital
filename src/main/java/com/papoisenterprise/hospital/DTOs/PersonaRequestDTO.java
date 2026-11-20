@@ -30,7 +30,7 @@ public class PersonaRequestDTO {
         @PastOrPresent(message = "ERROR: La fecha de nacimiento no puede ser futura")
         private LocalDate fechaNacimiento;
 
-        @NotNull(message = "ERROR: La edad no puede estar vacía")
+        @NotBlank(message = "ERROR: La edad no puede estar vacia")
         @Min(value = 1, message = "ERROR: Ingresa una edad válida")
         @Max(value = 120, message = "ERROR: Ingresa una edad válida")
         private Integer edad;

@@ -13,8 +13,9 @@ public class DoctorRequestDTO extends PersonaRequestDTO {
     @NotBlank(message = "ERROR: La especialidad es obligatoria")
     private String especialidad;
 
-    @NotNull(message = "ERROR: El sueldo no puede estar vacío")
+    @NotBlank(message = "ERROR: El sueldo no puede estar vacío")
     @DecimalMin(value = "0.01", inclusive = true, message = "ERROR: El sueldo debe ser mayor a cero")
+    @Digits(integer = 7, fraction = 2, message = "Máximo 7 enteros y 2 decimales")
     private Float sueldo;
 
     @NotBlank(message = "ERROR: El número de cédula no debe estar vacío")
